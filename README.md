@@ -603,46 +603,5 @@ Contributions are welcome! Feel free to:
 4. Update documentation for new features
 5. Test your changes thoroughly
 
----
-
-## License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- Built with [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
-- Powered by [Google Generative AI](https://ai.google.dev/)
-- Deployed on [Railway](https://railway.app/)
-- Pro Version on [Apify](https://apify.com/)
-- Built for Hack This Fall 2025
-
----
-
-## Team
-
-**Team DDoxer**
-
-- **Avanish Kasar** - Lead Developer
-  - [X (Twitter)](https://x.com/only_avanish)
-  - [LinkedIn](https://linkedin.com/in/avanishkasar)
-  - [GitHub](https://github.com/avanishkasar)
-
-- **Jamil** - Co-Developer
-
----
-
-## Support
-
-- **Live Application:** [playlistify.up.railway.app](https://playlistify.up.railway.app)
-- **Pro Version:** [apify.com/viverun/playlistfy](https://apify.com/viverun/playlistfy)
-- **Report Issues:** [GitHub Issues](https://github.com/avanishkasar/Playlistify-AI/issues)
-- **Request Features:** [GitHub Issues](https://github.com/avanishkasar/Playlistify-AI/issues)
-
----
-
-**Made with dedication by Team DDoxer**
 
 *"Music is not trivial. Music is memory, emotion, routine, identity."*
