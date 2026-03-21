@@ -1,0 +1,44 @@
+{
+  "title": "Playlistify AI - Spotify Playlist Creator",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "spotifyClientId": {
+      "title": "Spotify Client ID",
+      "type": "string",
+      "description": "Your Spotify application client ID. If not provided, a default integration will be used.",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "spotifyClientSecret": {
+      "title": "Spotify Client Secret",
+      "type": "string",
+      "description": "Your Spotify application client secret. If not provided, a default integration will be used.",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "spotifyRefreshToken": {
+      "title": "Spotify Refresh Token",
+      "type": "string",
+      "description": "Refresh token for your Spotify user account. If not provided, a default integration will be used.",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "enableNLP": {
+      "title": "Enable Natural Language Processing",
+      "type": "boolean",
+      "description": "Enable smart keyword translation (e.g., 'workout' → rock/metal/electronic genres)",
+      "default": true,
+      "editor": "checkbox"
+    },
+    "port": {
+      "title": "Server Port",
+      "type": "integer",
+      "description": "Port for the MCP server to listen on",
+      "default": 3001,
+      "minimum": 1024,
+      "maximum": 65535
+    }
+  },
+  "required": []
+}
