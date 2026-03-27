@@ -1,0 +1,36 @@
+{
+  "actorSpecification": 1,
+  "name": "jubilant_pheasant/playlistify-ai",
+  "title": "Playlistfy",
+  "description": "AI-powered Spotify playlist creator - describe your mood, get a curated playlist.",
+  "version": "0.1.0",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "meta": {
+    "standby": {
+      "enabled": true,
+      "memoryMbytes": 256,
+      "desiredRequestsPerRun": 20,
+      "idleTimeoutSecs": 120,
+      "maxRequestsPerRun": 100
+    }
+  },
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "playlistId",
+              "name",
+              "trackCount",
+              "createdAt"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
