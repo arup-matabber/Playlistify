@@ -1,0 +1,44 @@
+{
+  "title": "Spotify MCP Actor Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "spotifyClientId": {
+      "title": "Spotify Client ID",
+      "type": "string",
+      "description": "Your Spotify application client ID from the Spotify Developer Dashboard",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "spotifyClientSecret": {
+      "title": "Spotify Client Secret",
+      "type": "string",
+      "description": "Your Spotify application client secret",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "spotifyRefreshToken": {
+      "title": "Spotify Refresh Token",
+      "type": "string",
+      "description": "Refresh token for your Spotify user account with playlist modification permissions",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "enableNLP": {
+      "title": "Enable NLP",
+      "type": "boolean",
+      "description": "Enable natural language processing for playlist descriptions",
+      "default": true,
+      "editor": "checkbox"
+    },
+    "port": {
+      "title": "Server Port",
+      "type": "integer",
+      "description": "Port for the MCP server to listen on",
+      "default": 3001,
+      "minimum": 1024,
+      "maximum": 65535
+    }
+  },
+  "required": ["spotifyClientId", "spotifyClientSecret", "spotifyRefreshToken"]
+}
